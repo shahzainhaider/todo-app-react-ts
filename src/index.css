@@ -6,6 +6,7 @@
     font-size: larger;
     font-weight: 600;
     color: black;
+    
 }
 
 .list li input[type='checkbox']:checked + label{
