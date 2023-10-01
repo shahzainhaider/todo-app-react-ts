@@ -24,7 +24,7 @@ const Todos = () => {
     <ul className="list">
         {
             filterData.map((todo)=>{
-                return <li key={todo.id} className="flex h-10 px-10 border-b py-8 box-border items-center" >
+                return (<li key={todo.id} className="flex h-10 px-10 border-b py-8 box-border items-center" >
                     <input type="checkbox" name="" id={`todo-${todo.id}`} checked={todo.completed} onChange={()=>toggleTodo(todo.id)} />
                     <label className="ml-3 text-lg tracking-wider font-mono" htmlFor={`todo-${todo.id}`}>{todo.task}</label>
                     {
@@ -33,7 +33,7 @@ const Todos = () => {
                         )
                     }
 
-                </li>
+                </li>)
 
             })
         }
